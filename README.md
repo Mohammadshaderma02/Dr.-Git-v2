@@ -5,6 +5,7 @@
 
 * To Download Chest X-Ray Dataset <a href='https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia'>Go to Kaggle</a>
 * To Download CT-Scan images Dataset <a href='https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images'>Go to Kaggle</a>
+* To Using Code Must Be Install Model and Add to Model Folder In PythonProject <a href='https://drive.google.com/file/d/1-CcHtpxevPdQpLFuMl8k5CzpGiy3DUGD/view?usp=sharing'> CT-Scan Model </a> <a href='https://drive.google.com/file/d/13ZdgkYSHRsLzk027RysGJVtNyWXg3kzP/view?usp=sharing'> Chest X-Ray Model</a>
 
  **About Chest X-Ray  dataset**
 ---
