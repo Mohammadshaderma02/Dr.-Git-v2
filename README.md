@@ -47,7 +47,7 @@ from keras.layers.core import Dropout
 > 
  <img src='/chrome-capture-2022-11-25.gif' alt="Sample"   />
  <img src='/chrome-capture-2022-11-25 (1).gif'   />
- <img src='chrome-capture-2022-11-25 (2).gif'   />
+ <img src='/chrome-capture-2022-11-25 (2).gif'   />
 
 
 
