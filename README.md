@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Chest X-Ray & CT-Scan Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* To Show Code And More details about Chest X-Ray  <a href='https://colab.research.google.com/drive/1eYQQsR0HMrLFk15JR8Z1cDuRuagxb8XA?usp=sharing'>Go to Colab</a>
+* To Show Code And More details about CT-Scan images  <a href='https://colab.research.google.com/drive/1f3YYVBiSMF40Ddm0sMo2Na2HqFLA5r2x?usp=sharing'>Go to Colab</a>
 
-## Available Scripts
+* To Download Chest X-Ray Dataset <a href='https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia'>Go to Kaggle</a>
+* To Download CT-Scan images Dataset <a href='https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images'>Go to Kaggle</a>
 
-In the project directory, you can run:
+ **About Chest X-Ray  dataset**
+---
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+*   The dataset provide 6000 images to classify.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# > **Unzipping files**
+```python
+import zipfile
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# returns 'Select files'
+zip_files = ['test1', 'train']
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+for zip_file in zip_files:
+    with zipfile.ZipFile("/x-ray.zip".format(zip_file),"r") as z:
+        z.extractall(".")
+        print("{} unzipped".format(zip_file))
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
 
-### `npm run eject`
+# > **importing library**
+```python
+import numpy as np
+import pandas as pd
+import os
+import tensorflow as tf
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+from keras import regularizers
+from keras.layers.core import Dropout
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ > **ScreenShot**
+> 
+ <img src='/chrome-capture-2022-11-25.gif' alt="Sample"   />
+ <img src='/chrome-capture-2022-11-25 (1).gif'   />
+ <img src='chrome-capture-2022-11-25 (2).gif'   />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+ > **Build Model**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ <img src='https://www.mdpi.com/diagnostics/diagnostics-10-00417/article_deploy/html/images/diagnostics-10-00417-g001.png'   />
+ 
+> **Front-End**
+* React Js
+> **Back-End**
+* Flask Framwork
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+>Library
+* pandas
+* numpy
+* os
+* keras
+* tensorflow
+* matplotlib
+* pandas
